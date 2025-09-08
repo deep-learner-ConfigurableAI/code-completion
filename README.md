@@ -119,7 +119,7 @@ print(completed_code)
 
 4. **Constant Length Dataset**: For efficient training, we process examples into a constant length format.
 
-## 📊 Performance
+##  Performance
 
 The model's performance depends on:
 - The quality and size of the training dataset
