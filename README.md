@@ -2,7 +2,7 @@
 
 A Python implementation of an AI-powered code completion system using the StarCoder base model with LoRA fine-tuning. This project provides a lightweight yet powerful code completion capability that can be trained on custom datasets.
 
-## 🌟 Features
+##  Features
 
 - **Fill-in-the-Middle (FIM) Capability**: Handles both prefix-suffix code completion and middle-context completion
 - **LoRA Fine-tuning**: Efficient parameter-efficient fine-tuning using Low-Rank Adaptation
@@ -10,7 +10,7 @@ A Python implementation of an AI-powered code completion system using the StarCo
 - **Customizable Training**: Easily adjust hyperparameters through the settings file
 - **Apple Silicon Support**: Optimized for running on Apple MPS devices / Note-Since currenlty huggingface does'nt support MLX backend out of the box, hence training runs on mlx backend is slow when compare to cuda device.
 
-## 📋 Requirements
+##  Requirements
 
 - Python 3.8+
 - PyTorch 2.0+
@@ -20,7 +20,7 @@ A Python implementation of an AI-powered code completion system using the StarCo
 - Accelerate
 - BitsAndBytes (for quantization)
 
-## 🛠️ Installation
+## 🛠 Installation
 
 ```bash
 # Clone the repository
@@ -35,7 +35,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install torch transformers datasets accelerate bitsandbytes peft tqdm
 ```
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 code-completion/
@@ -48,7 +48,7 @@ code-completion/
 │   └── runner.py         # Training and inference logic
 ```
 
-## ⚙️ Configuration
+##  Configuration
 
 All model and training configurations are centralized in `src/settings.py`. Key parameters include:
 
@@ -59,7 +59,7 @@ All model and training configurations are centralized in `src/settings.py`. Key 
 - LoRA configuration (rank, alpha, target modules)
 - FIM transformation settings
 
-## 🚀 Usage
+##  Usage
 
 ### Training
 
@@ -105,7 +105,7 @@ completed_code = get_code_completion(model, tokenizer, prefix, suffix)
 print(completed_code)
 ```
 
-## 🔍 How It Works
+##  How It Works
 
 1. **Fill-in-the-Middle (FIM)**: The model is trained to predict missing code in the middle of two context pieces (prefix and suffix).
 
@@ -122,15 +122,15 @@ The model's performance depends on:
 - The hyperparameters used (especially LoRA rank and learning rate)
 - The number of training steps
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📜 License
+##  License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - [BigCode Project](https://www.bigcode-project.org/) for the StarCoder base model
 - [Hugging Face](https://huggingface.co/) for their excellent Transformers library
