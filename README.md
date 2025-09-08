@@ -74,6 +74,10 @@ cd src
 python main.py
 ```
 
+Snapshot of Trainig Run:
+TrainOutput(global_step=1000, training_loss=0.7857105331420898, metrics={'train_runtime': 626.5932, 'train_samples_per_second': 12.767, 'train_steps_per_second': 1.596, 'train_tokens_per_second': 25841.328, 'total_flos': 9.961198190592e+16, 'train_loss': 0.7857105331420898, 'epoch': 0.8176614881439084})
+
+
 ### Inference
 
 To use the model for code completion:
